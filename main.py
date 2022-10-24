@@ -454,7 +454,7 @@ async def passgen(ctx, length = 10):
     await ctx.author.send(f"".join(psw))
 
 
-@c.ient.command()
+@client.command()
 async def move(ctx, member: discord.Member, chan):
     member_id = member.id
     channel = discord.utils.get(ctx.guild.channels, name=chan)
